@@ -5,7 +5,7 @@ project("How to call C libraries from C++" LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-file(GLOB_RECURSE SRCS Po7/*.cpp PlusPlust/*.h PlusPlust/*.cpp)
+file(GLOB_RECURSE SRCS Po7/*.cpp Po7/*.h PlusPlus/*.h PlusPlus/*.cpp)
 
 add_library(socketwrapper STATIC ${SRCS})
 target_include_directories(
